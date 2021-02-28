@@ -1,0 +1,27 @@
+.header {
+  font-size: 22px;
+  background-image: linear-gradient(to right, #D16BA5, #86A8E7, #5FFBF1);
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header li {
+  float: left;
+}
+
+.header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.header li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
