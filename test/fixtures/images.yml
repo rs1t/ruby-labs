@@ -4,10 +4,10 @@ one:
   name: MyString
   file: MyString
   avg_value: 1.5
-  theme_id: 1
+  theme: one
 
 two:
   name: MyString
   file: MyString
   avg_value: 1.5
-  theme_id: 1
+  theme: two
