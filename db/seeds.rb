@@ -17,16 +17,28 @@ Theme.reset_pk_sequence
 Theme.create([
 
                { name: "-----" }, # 1 Нет темы
-               { name: "Какое из произведений художника О.Ренуара наилучшим образом характеризует его творчество?" }, # 2
-               { name: "Какое из произведений художника П.Пикассо наилучшим образом характеризует его творчество?" }, # 3
-               { name: "Какое из произведений художника А.Матисса наилучшим образом характеризует его творчество?" }, # 4
+               { name: "Paintings" }, # 2
+               { name: "Landscapes" }, # 3
+               { name: "Album arts" }, # 4
              ])
 
 Image.delete_all
 Image.reset_pk_sequence
 Image.create([
-               { name: 'P.-A. Renoir, Бал в Мулен де ла Галетт', file: '1.png', theme_id: 2 },
-               { name: 'P.-A. Renoir, Букет', file: '2.png', theme_id: 2 },
-               { name: 'P. Picasso, Фабрика', file: '3.png', theme_id: 3 },
-               { name: 'H. Matiss, Балерина', file: '4.png', theme_id: 4 },
+               { name: 'Default pic', file: 'default.jpeg', theme_id: 1 },
+               { name: 'Painting 1', file: 'painting1.jpeg', theme_id: 2 },
+               { name: 'Painting 2', file: 'painting2.jpeg', theme_id: 2 },
+               { name: 'Painting 3', file: 'painting3.jpeg', theme_id: 2 },
+               { name: 'Painting 4', file: 'painting4.jpeg', theme_id: 2 },
+               { name: 'Painting 5', file: 'painting5.jpeg', theme_id: 2 },
+               { name: 'Landscape 1', file: 'landscape1.jpeg', theme_id: 3 },
+               { name: 'Landscape 2', file: 'landscape2.jpeg', theme_id: 3 },
+               { name: 'Landscape 3', file: 'landscape3.jpeg', theme_id: 3 },
+               { name: 'Landscape 4', file: 'landscape4.jpeg', theme_id: 3 },
+               { name: 'Landscape 5', file: 'landscape5.jpeg', theme_id: 3 },
+               { name: 'Album art 1', file: 'album1.jpeg', theme_id: 4 },
+               { name: 'Album art 2', file: 'album2.jpeg', theme_id: 4 },
+               { name: 'Album art 3', file: 'album3.jpeg', theme_id: 4 },
+               { name: 'Album art 4', file: 'album4.jpeg', theme_id: 4 },
+               { name: 'Album art 5', file: 'album5.jpeg', theme_id: 4 },
              ])
