@@ -66,7 +66,7 @@ gem 'haml-rails', '~> 2.0'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'font-awesome-sass', '~> 4.6.2'
 
-gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap', '~> 4.5.3'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'jquery-ui-rails'
 gem 'rails-asset-jqueryui'
