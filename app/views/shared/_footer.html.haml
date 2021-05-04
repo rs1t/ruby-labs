@@ -1,8 +1,8 @@
 .footer
-  = "✨ #{Time.current.strftime("%d %b %Y") } ✨"
-
   %ul
-    %li= link_to 'Index', main_index_path
-    %li= link_to 'Contacts', main_contacts_path
-    %li= link_to 'Help', main_help_path
-    %li= link_to 'About', main_about_path
+    %li= link_to t('.index'), main_index_path
+    %li= link_to t('.contacts'), main_contacts_path
+    %li= link_to t('.help'), main_help_path
+    %li= link_to t('.about'), main_about_path
+    %li= link_to "🇷🇺", locale: :ru
+    %li= link_to "🇬🇧", locale: :en

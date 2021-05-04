@@ -1,3 +1,53 @@
-h1 {
-  text-align: center;
+.page-header {
+  margin: 20px 0;
+}
+
+button > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button > a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+button, input[type=submit] {
+  font-size: 16px;
+  color: #fff;
+  background-color: #FD6585 !important;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}
+
+button:hover, input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+input, select {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #FD6585 !important;
+  border-width: 2px;
+  border-radius: 5px;
+  border-style: solid;
+  min-width: 10px;
+  height: 44px;
+  max-height: 44px;
+  min-height: 44px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 6px 10px;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+
+label {
+  font-size: 18px;
 }

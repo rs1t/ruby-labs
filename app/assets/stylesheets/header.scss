@@ -1,6 +1,6 @@
 .header {
   font-size: 22px;
-  background-image: linear-gradient(to right, #D16BA5, #86A8E7, #5FFBF1);
+  background-image: linear-gradient(to right, #FD6585, #FFD3A5);
 }
 
 .header ul {
@@ -24,4 +24,12 @@
 
 .header li a:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  color: white;
+}
+
+.header .gravatar {
+  height: 66px;
 }

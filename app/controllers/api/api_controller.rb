@@ -74,8 +74,6 @@ module Api
       end
     end
 
-
-
     def next_index(index, length)
       new_index = index
       index < length - 1 ? new_index += 1 : new_index = 0

@@ -19,4 +19,9 @@ Rails.application.routes.draw do
   resources :images
   resources :values
   resources :users
+  resources :sessions
+
+  match 'signup',   to: 'users#new',            via: 'get'
+  match 'signin',   to: 'sessions#new',         via: 'get'
+  match 'signout',  to: 'sessions#destroy',     via: 'delete'
 end
