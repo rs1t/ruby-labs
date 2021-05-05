@@ -28,7 +28,7 @@ class WorkController < ApplicationController
       theme_id = 1
       values_qty = Value.all.count.round
       data = { index: 0, name: 'default', values_qty: values_qty,
-               file: 'default.jpeg', image_id: 4,
+               file: 'default.jpg', image_id: 4,
                current_user_id: current_user_id,
                user_valued: false,
                common_avg_value: 0, value: 0 }

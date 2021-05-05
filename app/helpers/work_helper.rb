@@ -1,4 +1,6 @@
 module WorkHelper
+  include ActionView::Helpers::AssetUrlHelper
+
   def image_data(theme, data)
     @image_data = {}
     @image_data[:values_qty] = data[:values_qty]
@@ -9,7 +11,7 @@ module WorkHelper
     @image_data[:images_arr_size] = data[:images_arr_size]
     @image_data[:image_id] = data[:image_id]
     @image_data[:name] = data[:name]
-    @image_data[:file] = data[:file]
+    @image_data[:file] = view_context.asset_url("pictures/#{data[:file]}")
     @image_data[:user_valued] = data[:user_valued]
     @image_data[:value] = data[:value]
     @image_data[:common_avg_value] = data[:common_avg_value]

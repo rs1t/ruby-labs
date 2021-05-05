@@ -26,7 +26,7 @@ module Api
             render json:
                      { new_image_index: next_image_data[:index],
                        name: next_image_data[:name],
-                       file: next_image_data[:file],
+                       file: view_context.asset_url("pictures/#{next_image_data[:file]}"),
                        image_id: next_image_data[:image_id],
                        user_valued: next_image_data[:user_valued],
                        common_avg_value:
@@ -61,7 +61,7 @@ module Api
             render json:
                      { new_image_index: prev_image_data[:index],
                        name: prev_image_data[:name],
-                       file: prev_image_data[:file],
+                       file: view_context.asset_url("pictures/#{prev_image_data[:file]}"),
                        image_id: prev_image_data[:image_id],
                        user_valued: prev_image_data[:user_valued],
                        common_avg_value:
