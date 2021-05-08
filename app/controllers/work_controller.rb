@@ -23,7 +23,7 @@ class WorkController < ApplicationController
 
     # current_user_id = current_user.id
     current_user_id = 1
-    if params[:theme] == '-----' #.blank?
+    if params[:theme].blank?
       theme = 'Select theme to leave your answer'
       theme_id = 1
       values_qty = Value.all.count.round

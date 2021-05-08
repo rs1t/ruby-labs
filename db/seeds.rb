@@ -16,7 +16,7 @@ Theme.delete_all
 Theme.reset_pk_sequence
 Theme.create([
 
-               { name: "-----" }, # 1 Нет темы
+               { name: "" }, # 1 Нет темы
                { name: "Paintings" }, # 2
                { name: "Landscapes" }, # 3
                { name: "Album arts" }, # 4
