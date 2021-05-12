@@ -10,4 +10,5 @@
     %b= t('.email')
     = @user.email
 
-  = link_to t('.work'), work_path, class: "btn btn-lg btn-primary"
+  %button
+    = link_to t('.work'), work_path

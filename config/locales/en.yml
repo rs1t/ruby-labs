@@ -1,8 +1,7 @@
 en:
   shared:
     header:
-      home: "Home"
-      index: "Index"
+      index: "Home"
       help: "Help"
       sign_in: "Sign in"
       sign_out: "Sign out"
@@ -19,6 +18,7 @@ en:
 
   main:
     index: "Main Page"
+    rate_button: "Rate images"
     contacts: "Contacts"
     help: "Help"
     about: "About"
@@ -42,6 +42,10 @@ en:
     new:
       new_user_sign_up: "Sign up"
       back: "Back"
+
+    show:
+      email: "E-mail"
+      work: "Rate images"
 
   work:
     index:

@@ -1,7 +1,6 @@
 ru:
   shared:
     header:
-      home: "Главная"
       index: "Главная"
       help: "Помощь"
       sign_in: "Войти"
@@ -19,6 +18,7 @@ ru:
 
   main:
     index: "Главная"
+    rate_button: "Оценка изображений"
     contacts: "Контакты"
     help: "Помощь"
     about: "О проекте"
@@ -27,14 +27,14 @@ ru:
     new:
       sign_in: "Войти"
       sign_up: "Зарегистрироваться"
-      email: "E-mail"
+      email: "Е-мейл"
       password: "Пароль"
       new_user?: "Новый пользователь?"
 
   users:
     form:
       name: "Имя"
-      email: "E-mail"
+      email: "Е-мейл"
       password: "Пароль"
       password_confirmation: "Подтверждение пароля"
       create_account: "Создать аккаунт"
@@ -42,6 +42,10 @@ ru:
     new:
       new_user_sign_up: "Регистрация"
       back: "Назад"
+
+    show:
+      email: "Е-мейл"
+      work: "Оценка изображений"
 
   work:
     index:
