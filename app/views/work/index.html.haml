@@ -4,7 +4,20 @@
       .left_controls
         .select_theme
           = render 'work/button_theme_select', locale: @current_locale
-      %br
+        .rate_image
+          %h3{:title => "Value scale"}
+            = t(".make_decision")
+          .slider-container.row
+            %p.left.col-md-2 5%
+            .col-md-8#slider
+              %input#slide{:type => "range", :onchange => "updateSlider(this.value)",
+                  :max => "100", :min => "5", :step => "5", :value => "50"
+                }
+            %p.right.col-md-2 100%
+          #chosen_value 50
+          %button.button__results.save{:title => "Save image diag results"}
+            %a{"data-remote" => "true", :format => "js", :href => "#", :title => "Save image diag results"}
+              = t(".save_decision")
 
     .col-md-9
       .image_display
@@ -24,9 +37,17 @@
               %img{:alt => "Default Image",
                    :src => asset_url('pictures/default.jpg'),
                    :title => "Default image",
-                   :style => "width:100%; height:100%;",
               }
-            .image_user_value{:title => "Expert value"}
+            .image_stats
+              %span.total_values
+                = t('.total_values')
+                %h4.total{:title => "Total values"} #{@values_qty.round}
+              %span.user_value
+                = t('.user_value')
+                %h4.user{:title => "Expert value"}
+              %span.common_value
+                = t('.common_value')
+                %h4.common{:title => "Common value"}
           .col-md-1
             .img-right-side
               %h3{:title => "list to next image"}

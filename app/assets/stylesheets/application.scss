@@ -16,8 +16,9 @@
  *= require font-awesome
  */
 
-@import "bootstrap";
+@import 'bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
-    font-family: "Fira Code", monospace;
+    font-family: 'Montserrat', sans-serif;
 }

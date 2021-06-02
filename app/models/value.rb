@@ -16,4 +16,12 @@ class Value < ApplicationRecord
     end
     [res, value]
   end
+
+  def self.calc_average_value(image_id)
+    values_arr = where(image_id: image_id).pluck(:value)
+    values_sum = values_arr.inject(:+)
+    avg_value = values_sum / values_arr.size
+    logger.info "In calc_average_value: values_arr = #{values_arr.inspect}, values_sum = #{values_sum.inspect}, avg_value = #{avg_value.inspect}"
+    avg_value.round
+  end
 end

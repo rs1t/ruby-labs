@@ -51,6 +51,14 @@ en:
     index:
       def_select_theme: "Select theme to leave your answer"
 
+      user_value: "Your value: "
+      common_value: "Common value: "
+      total_values: "Total values: "
+      make_decision: "Rate image"
+      save_decision: "Save"
+      share_opinion: "Share your opinion"
+      theme_name: "Theme name"
+
     button_theme_select:
       select_theme_button: "Select theme"
 
@@ -59,4 +67,3 @@ en:
 
     display_theme:
       select_theme: "Select theme"
-

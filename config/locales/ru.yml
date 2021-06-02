@@ -51,8 +51,16 @@ ru:
     index:
       def_select_theme: "Выберите тему для оценки"
 
+      user_value: "Ваша оценка: "
+      common_value: "Средняя оценка: "
+      total_values: "Всего оценок: "
+      make_decision: "Оцените изображение"
+      save_decision: "Сохранить"
+      share_opinion: "Поделись своим мнением"
+      theme_name: "Тема"
+
     button_theme_select:
       select_theme_button: "Выбрать тему"
 
     choose_theme_from_arr:
-      select_theme: "Выберите тему"
+      select_theme: "Выбрать тему"
