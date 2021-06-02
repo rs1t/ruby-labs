@@ -6,6 +6,11 @@
   height: 100%;
   padding-top: 100px;
   text-align: center;
+
+  button, select {
+    margin-bottom: 20px;
+    min-width: 200px;
+  }
 }
 
 .rate_image {
@@ -22,7 +27,6 @@
 .img-center > img {
   width:auto;
   height:auto;
-  //max-width:500px;
   max-height:500px;
 }
 
@@ -40,9 +44,7 @@
 }
 
 #slider {
-  //margin-left: 10%;
   width: 100%;
-  //float: left;
 }
 
 p.left {
@@ -60,8 +62,6 @@ p.right {
 
 input[type='range'] {
   -webkit-appearance: none;
-  //margin-left: 2px;
-  //margin-right: 2px;
   -webkit-border-radius: 5px;
 }
 
@@ -79,8 +79,6 @@ input[type='range'] {
   text-align: center;
   font-weight: bold;
   font-size: large;
-  //margin-left: 5em;
-  //margin-top: .8em;
   float: left;
 }
 
@@ -104,10 +102,53 @@ span.total_values {
 }
 
 
+.results_list {
+  position: relative;
+  margin: .7em auto auto;
+  padding: .4em;
+  width: 95%;
+  border-radius: .5em;
 
-//.image_user_value {
-//  padding-top: 20px;
-//  text-align: center;
-//  font-weight: bold;
-//  font-size: 24px;
-//}
+  th, tr, td {
+    padding: 10px;
+  }
+}
+
+.pagination a, .pagination span.current, .pagination span.gap {
+  float: left;
+  padding: 0 14px;
+  line-height: 38px;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid #DDD;
+  border-left-width: 0;
+}
+
+.pagination {
+  border-left: 1px solid #ddd;
+  .first{
+    padding : 0;
+    float: none;
+    border: none;
+  }
+  .prev {
+    padding : 0;
+    float: none;
+    border: none;
+  }
+  .page{
+    padding : 0;
+    float: none;
+    border: none;
+  }
+  .next{
+    padding : 0;
+    float: none;
+    border: none;
+  }
+  .last{
+    padding : 0;
+    float: none;
+    border: none;
+  }
+}

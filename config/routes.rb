@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   match 'work', to: 'work#index', via: 'get'
   match 'choose_theme', to: 'work#choose_theme', via: :get
+  match 'results_list', to: 'work#results_list', via: :get
   match 'display_theme', to: 'work#display_theme', via: :post
 
   namespace :api, defaults: { format: :json } do

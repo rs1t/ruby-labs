@@ -7,8 +7,7 @@ module WorkImage
   def show_image(theme_id, image_index)
     theme_images = Image.theme_images(theme_id)
 
-    # current_user_id = current_user.id
-    current_user_id = 1
+    current_user_id = current_user.nil? ? 1 : current_user.id
     logger.info "In show_image: current_user_id = #{current_user_id.inspect}"
 
     one_image_attr = theme_images[image_index].attributes

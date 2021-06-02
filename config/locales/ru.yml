@@ -62,5 +62,17 @@ ru:
     button_theme_select:
       select_theme_button: "Выбрать тему"
 
+    button_list_results:
+      results_list: "Результаты"
+
     choose_theme_from_arr:
       select_theme: "Выбрать тему"
+
+    display_theme:
+      select_theme: "Выбрать тему"
+
+    results_list:
+      no_values: "Результаты по выбранной теме отсутствуют..."
+      select_theme: "Выберите другую тему"
+      return_to_main: "На главную"
+      page_title: "Перейдите к выбору темы"

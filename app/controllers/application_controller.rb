@@ -26,7 +26,14 @@ class ApplicationController < ActionController::Base
 
   def set_locale
     I18n.locale = set_locale_from_params || I18n.default_locale
-    Rails.application.routes.default_url_options[:locale]= I18n.locale
+    Rails.application.routes.default_url_options[:locale] = I18n.locale
   end
 
+  def pages_of(data, records_per_pages)
+    if data.is_a?(Array)
+      Kaminari.paginate_array(data).page(params[:page]).per(records_per_pages)
+    else
+      data.page(params[:page]).per(records_per_pages)
+    end
+  end
 end

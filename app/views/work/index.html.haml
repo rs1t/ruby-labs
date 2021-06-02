@@ -4,6 +4,8 @@
       .left_controls
         .select_theme
           = render 'work/button_theme_select', locale: @current_locale
+        .list_results
+          = render 'work/button_list_results'
         .rate_image
           %h3{:title => "Value scale"}
             = t(".make_decision")
@@ -47,7 +49,7 @@
                 %h4.user{:title => "Expert value"}
               %span.common_value
                 = t('.common_value')
-                %h4.common{:title => "Common value"}
+                %h4.common{:title => "Average value"}
           .col-md-1
             .img-right-side
               %h3{:title => "list to next image"}

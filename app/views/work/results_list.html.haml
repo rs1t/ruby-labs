@@ -1,0 +1,36 @@
+.results_list{ title: t(".page_title")}
+
+  - if @composite_results.blank?
+    %table{ :style => "table-layout: auto; title: 'No Values results...';" }
+      .results
+        %h2=  t(".no_values")
+        %h2=  t(".select_theme")
+    %br
+    %hr
+  - else
+    %table{ :style => "table-layout: auto; title: 'All images expert values';" }
+      .results
+        %h2 All images expert values
+      %tr{ :style => "font-size: 2em; margin-bottom: .5em" }
+        %th.name
+          Image name
+        %th Image
+        %th Value
+        %th Date
+
+      - @composite_results_paged.each do |composite_diag|
+        %tr.one_row
+          %td{ :style => "text-align: left; width: 25em" }= composite_diag.name
+          %td= image_tag(asset_url('pictures/' + composite_diag.file), {:width => "53", :height =>"47", title: "Tested image"} )
+          %td= composite_diag.avg_value
+          %td= composite_diag.created_at.strftime('%d.%m.%y ')
+
+      = paginate @composite_results_paged
+    %br
+    %hr
+= link_to t(".return_to_main"), work_path,  class: "btn btn-lg btn-primary", title: "Go to main page"
+%br
+%br
+
+
+

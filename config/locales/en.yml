@@ -52,7 +52,7 @@ en:
       def_select_theme: "Select theme to leave your answer"
 
       user_value: "Your value: "
-      common_value: "Common value: "
+      common_value: "Average value: "
       total_values: "Total values: "
       make_decision: "Rate image"
       save_decision: "Save"
@@ -62,8 +62,17 @@ en:
     button_theme_select:
       select_theme_button: "Select theme"
 
+    button_list_results:
+      results_list: "Results"
+
     choose_theme_from_arr:
       select_theme: "Select theme"
 
     display_theme:
       select_theme: "Select theme"
+
+    results_list:
+      no_values: "No Values results for selected theme..."
+      select_theme: "Select other theme"
+      return_to_main: "Return to main"
+      page_title: "Go to work area"
